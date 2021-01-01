@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Program Metode Simplex</title>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    </head>
+    <body style="background-color:GreenYellow;" data-spy="scroll" data-target=".bs-docs-sidebar">
+        <div id="container">
+            <div class="container">
+            <br><br>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                        Program Metode Simplex
+                    </div>
+                </div>
+                <div class="jumbotron">
+                    <center>
+                        <h1>Program Metode Simplex</h1>
+                        <h3>Mata Kuliah : Operasional Riset</h3>
+                    </center>
+                    <div class="alert alert-warning" role="alert">
+                        <center>
+                            <h5>Oleh:</h5>
+                            <h4>Fauzan Akmal Hariz</h4>
+                            <h4>140810180005</h4>
+                        </center>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                        Silahkan Isi Sesuai Keinginan
+                    </div>
+                </div>
+                <br>
+                <center>
+                <form name="theSpreadsheet">
+                    <table  class="table-striped active">
+                        <tr>
+                            <td align = center>
+                                Masukkan Sistem Persamaan Linear! 
+                                <br>
+                                Tekan "Contoh" untuk memunculkan contoh penulisan SPL.
+                                <br>
+                                <textarea style="min-width: 100%" class="form-control input-sm" name = "input" rows = 5 cols = 100></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <center>
+                                <br>
+                                Mode:
+                                <select class="form-control" id="problemType" name="Mode">
+                                    <option value="decimal" selected>Decimal</option>
+                                    <option value="fraction">Fraction</option>
+                                    <option value="integer">Integer</option>
+                                </select>
+                                <br>
+                                </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <center>
+                                Rounding :
+                                <br>
+                                <input type=text size=2 value="6" name="acc">
+                                <br>
+                                </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align = center>
+                                <br>
+                                Solusi:
+                                <br>
+                                <b><input style="min-width: 100%; text-align:center;" type=text size=80 disabled name="expr" value = "Solusi yang optimal."></b>
+                                <br> <br>
+                                <input type="button" class="btn btn-success btn-lg" value = "Hasil" onClick="doIt(2); doIt(1)"> &nbsp;
+                                <input type="button" class="btn btn-warning btn-lg" value = "Contoh" onClick="doIt(5)"> &nbsp;
+                                <input type="button" class="btn btn-danger btn-lg" value = "Hapus" onClick="doIt(3)"> &nbsp;
+                                <br> <br>
+                            </td>
+                        <tr>
+                            <td align = center>
+                                Tabel Iterasi akan muncul disini
+                                <br>
+                                <textarea style="min-width: 100%" name = "output" rows = 12 cols = 80></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                </center>
+                
+
+
+
+                <br>
+            </div>
+        </div>
+        <!-- Javascript placed at the end of the document so the pages load more faster -->
+        <script type="text/javascript" src="assets/js/Solver/simplex.js"></script>
+        <script type="text/javascript" src="../../platform.twitter.com/widgets.js"></script>
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/bootstrap-386.js"></script>
+        <script src="assets/js/bootstrap-transition.js"></script>
+        <script src="assets/js/bootstrap-alert.js"></script>
+        <script src="assets/js/bootstrap-modal.js"></script>
+        <script src="assets/js/bootstrap-dropdown.js"></script>
+        <script src="assets/js/bootstrap-scrollspy.js"></script>
+        <script src="assets/js/bootstrap-tab.js"></script>
+        <script src="assets/js/bootstrap-tooltip.js"></script>
+        <script src="assets/js/bootstrap-popover.js"></script>
+        <script src="assets/js/bootstrap-button.js"></script>
+        <script src="assets/js/bootstrap-collapse.js"></script>
+        <script src="assets/js/bootstrap-carousel.js"></script>
+        <script src="assets/js/bootstrap-typeahead.js"></script>
+        <script src="assets/js/bootstrap-affix.js"></script>
+        <script src="assets/js/holder/holder.js"></script>
+        <script src="assets/js/google-code-prettify/prettify.js"></script>
+        <script src="assets/js/application.js"></script>
+        <script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju-2.js" type="text/javascript"></script>
+        <script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/green-bintang-jatuh.js" type="text/javascript"></script>
+    </body>
+</html>
